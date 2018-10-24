@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>dialog_bot_sdk package &mdash; Python Bot SDK 0.0.1 documentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+
+<link rel="stylesheet" href="_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" id="current-theme" href="_static/css/bootstrap3/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" id="current-adjust-theme" type="text/css" />
+
+<link rel="stylesheet" href="_static/css/font-awesome.min.css">
+
+<style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+</style>
+
+<link rel="stylesheet" href="_static/css/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    './',
+            VERSION:     '0.0.1',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+    <script type="text/javascript" src="_static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/bootstrap3.min.js"></script>
+<script type="text/javascript" src="_static/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="_static/js/basicstrap.js"></script>
+<script type="text/javascript">
+</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="Python Bot SDK 0.0.1 documentation" href="index.html" /> 
+  </head>
+  <body role="document">
+    <div id="navbar-top" class="navbar navbar-fixed-top navbar-default" role="navigation" aria-label="top navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Python Bot SDK 0.0.1 documentation</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown visible-xs">
+                <a role="button" id="localToc" data-toggle="dropdown" data-target="#" href="#">Table Of Contents <b class="caret"></b></a>
+                <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
+                <ul>
+<li><a class="reference internal" href="#">dialog_bot_sdk package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-dialog_bot_sdk.bot">dialog_bot_sdk.bot module</a></li>
+<li><a class="reference internal" href="#module-dialog_bot_sdk.entity_manager">dialog_bot_sdk.entity_manager module</a></li>
+<li><a class="reference internal" href="#module-dialog_bot_sdk.interactive_media">dialog_bot_sdk.interactive_media module</a></li>
+<li><a class="reference internal" href="#module-dialog_bot_sdk.messaging">dialog_bot_sdk.messaging module</a></li>
+<li><a class="reference internal" href="#module-dialog_bot_sdk.peers">dialog_bot_sdk.peers module</a></li>
+<li><a class="reference internal" href="#module-dialog_bot_sdk.service">dialog_bot_sdk.service module</a></li>
+<li><a class="reference internal" href="#module-dialog_bot_sdk">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+                </ul>
+              </li>
+
+            
+              <li><a href="py-modindex.html" title="Python Module Index" >modules </a></li>
+              <li><a href="genindex.html" title="General Index" accesskey="I">index </a></li>
+            
+            <li class="visible-xs"><a href="_sources/dialog_bot_sdk.rst.txt" rel="nofollow">Show Source</a></li>
+
+            <li class="visible-xs">
+                <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="search.html" method="get">
+                  <div class="input-append input-group">
+                    <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+                    <span class="input-group-btn">
+                    <input type="submit" class="btn" value="Go" />
+                    </span>
+                  </div>
+                  <input type="hidden" name="check_keywords" value="yes" />
+                  <input type="hidden" name="area" value="default" />
+                </form>
+            </li>
+
+            
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- container -->
+    <div class="container-fluid">
+
+      <!-- row -->
+      <div class="row">
+         
+<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
+  <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">dialog_bot_sdk package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-dialog_bot_sdk.bot">dialog_bot_sdk.bot module</a></li>
+<li><a class="reference internal" href="#module-dialog_bot_sdk.entity_manager">dialog_bot_sdk.entity_manager module</a></li>
+<li><a class="reference internal" href="#module-dialog_bot_sdk.interactive_media">dialog_bot_sdk.interactive_media module</a></li>
+<li><a class="reference internal" href="#module-dialog_bot_sdk.messaging">dialog_bot_sdk.messaging module</a></li>
+<li><a class="reference internal" href="#module-dialog_bot_sdk.peers">dialog_bot_sdk.peers module</a></li>
+<li><a class="reference internal" href="#module-dialog_bot_sdk.service">dialog_bot_sdk.service module</a></li>
+<li><a class="reference internal" href="#module-dialog_bot_sdk">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/dialog_bot_sdk.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-inline" action="search.html" method="get">
+      <div class="input-append input-group">
+        <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+        <span class="input-group-btn">
+        <input type="submit" class="btn" value="Go" />
+        </span>
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  </div>
+</div> 
+        
+
+        <div class="col-md-9" id="content-wrapper">
+          <div class="document" role="main">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <div class="section" id="dialog-bot-sdk-package">
+<h1>dialog_bot_sdk package<a class="headerlink" href="#dialog-bot-sdk-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dialog_bot_sdk.internal.html">dialog_bot_sdk.internal package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dialog_bot_sdk.internal.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dialog_bot_sdk.internal.html#module-dialog_bot_sdk.internal.bot">dialog_bot_sdk.internal.bot module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dialog_bot_sdk.internal.html#module-dialog_bot_sdk.internal.peers">dialog_bot_sdk.internal.peers module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dialog_bot_sdk.internal.html#module-dialog_bot_sdk.internal.service">dialog_bot_sdk.internal.service module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dialog_bot_sdk.internal.html#module-dialog_bot_sdk.internal">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-dialog_bot_sdk.bot">
+<span id="dialog-bot-sdk-bot-module"></span><h2>dialog_bot_sdk.bot module<a class="headerlink" href="#module-dialog_bot_sdk.bot" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="dialog_bot_sdk.bot.DialogBot">
+<em class="property">class </em><code class="descclassname">dialog_bot_sdk.bot.</code><code class="descname">DialogBot</code><span class="sig-paren">(</span><em>channel</em>, <em>bot_token</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.bot.DialogBot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="staticmethod">
+<dt id="dialog_bot_sdk.bot.DialogBot.get_insecure_bot">
+<em class="property">static </em><code class="descname">get_insecure_bot</code><span class="sig-paren">(</span><em>endpoint</em>, <em>bot_token</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.bot.DialogBot.get_insecure_bot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dialog_bot_sdk.entity_manager">
+<span id="dialog-bot-sdk-entity-manager-module"></span><h2>dialog_bot_sdk.entity_manager module<a class="headerlink" href="#module-dialog_bot_sdk.entity_manager" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="dialog_bot_sdk.entity_manager.EntityManager">
+<em class="property">class </em><code class="descclassname">dialog_bot_sdk.entity_manager.</code><code class="descname">EntityManager</code><span class="sig-paren">(</span><em>internal</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.entity_manager.EntityManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="dialog_bot_sdk.entity_manager.EntityManager.adopt_peer">
+<code class="descname">adopt_peer</code><span class="sig-paren">(</span><em>peer</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.entity_manager.EntityManager.adopt_peer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="dialog_bot_sdk.entity_manager.EntityManager.bootstrap">
+<code class="descname">bootstrap</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.entity_manager.EntityManager.bootstrap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="dialog_bot_sdk.entity_manager.EntityManager.get_outpeer">
+<code class="descname">get_outpeer</code><span class="sig-paren">(</span><em>peer</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.entity_manager.EntityManager.get_outpeer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dialog_bot_sdk.interactive_media">
+<span id="dialog-bot-sdk-interactive-media-module"></span><h2>dialog_bot_sdk.interactive_media module<a class="headerlink" href="#module-dialog_bot_sdk.interactive_media" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="dialog_bot_sdk.interactive_media.InteractiveMedia">
+<em class="property">class </em><code class="descclassname">dialog_bot_sdk.interactive_media.</code><code class="descname">InteractiveMedia</code><span class="sig-paren">(</span><em>id</em>, <em>widget</em>, <em>style=None</em>, <em>confirm=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMedia" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="dialog_bot_sdk.interactive_media.InteractiveMedia.render">
+<code class="descname">render</code><span class="sig-paren">(</span><em>target</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMedia.render" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="dialog_bot_sdk.interactive_media.InteractiveMedia.style_map">
+<code class="descname">style_map</code><em class="property"> = {'danger': 3, 'default': 1, 'primary': 2}</em><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMedia.style_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="dialog_bot_sdk.interactive_media.InteractiveMediaButton">
+<em class="property">class </em><code class="descclassname">dialog_bot_sdk.interactive_media.</code><code class="descname">InteractiveMediaButton</code><span class="sig-paren">(</span><em>value</em>, <em>label=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMediaButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="dialog_bot_sdk.interactive_media.InteractiveMediaButton.render">
+<code class="descname">render</code><span class="sig-paren">(</span><em>target</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMediaButton.render" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="dialog_bot_sdk.interactive_media.InteractiveMediaConfirm">
+<em class="property">class </em><code class="descclassname">dialog_bot_sdk.interactive_media.</code><code class="descname">InteractiveMediaConfirm</code><span class="sig-paren">(</span><em>text=None</em>, <em>title=None</em>, <em>ok=None</em>, <em>dismiss=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMediaConfirm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="dialog_bot_sdk.interactive_media.InteractiveMediaConfirm.render">
+<code class="descname">render</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMediaConfirm.render" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="dialog_bot_sdk.interactive_media.InteractiveMediaGroup">
+<em class="property">class </em><code class="descclassname">dialog_bot_sdk.interactive_media.</code><code class="descname">InteractiveMediaGroup</code><span class="sig-paren">(</span><em>actions</em>, <em>title=None</em>, <em>description=None</em>, <em>translations=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMediaGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="dialog_bot_sdk.interactive_media.InteractiveMediaGroup.render">
+<code class="descname">render</code><span class="sig-paren">(</span><em>target</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMediaGroup.render" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="dialog_bot_sdk.interactive_media.InteractiveMediaSelect">
+<em class="property">class </em><code class="descclassname">dialog_bot_sdk.interactive_media.</code><code class="descname">InteractiveMediaSelect</code><span class="sig-paren">(</span><em>label=None</em>, <em>default_value=None</em>, <em>options=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMediaSelect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="dialog_bot_sdk.interactive_media.InteractiveMediaSelect.render">
+<code class="descname">render</code><span class="sig-paren">(</span><em>target</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMediaSelect.render" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dialog_bot_sdk.messaging">
+<span id="dialog-bot-sdk-messaging-module"></span><h2>dialog_bot_sdk.messaging module<a class="headerlink" href="#module-dialog_bot_sdk.messaging" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="dialog_bot_sdk.messaging.Messaging">
+<em class="property">class </em><code class="descclassname">dialog_bot_sdk.messaging.</code><code class="descname">Messaging</code><span class="sig-paren">(</span><em>manager</em>, <em>internal</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.messaging.Messaging" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#dialog_bot_sdk.service.ManagedService" title="dialog_bot_sdk.service.ManagedService"><code class="xref py py-class docutils literal notranslate"><span class="pre">dialog_bot_sdk.service.ManagedService</span></code></a></p>
+<dl class="method">
+<dt id="dialog_bot_sdk.messaging.Messaging.on_message">
+<code class="descname">on_message</code><span class="sig-paren">(</span><em>callback</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.messaging.Messaging.on_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="dialog_bot_sdk.messaging.Messaging.send_message">
+<code class="descname">send_message</code><span class="sig-paren">(</span><em>peer</em>, <em>text</em>, <em>interactive_media_groups=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.messaging.Messaging.send_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dialog_bot_sdk.peers">
+<span id="dialog-bot-sdk-peers-module"></span><h2>dialog_bot_sdk.peers module<a class="headerlink" href="#module-dialog_bot_sdk.peers" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-dialog_bot_sdk.service">
+<span id="dialog-bot-sdk-service-module"></span><h2>dialog_bot_sdk.service module<a class="headerlink" href="#module-dialog_bot_sdk.service" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="dialog_bot_sdk.service.ManagedService">
+<em class="property">class </em><code class="descclassname">dialog_bot_sdk.service.</code><code class="descname">ManagedService</code><span class="sig-paren">(</span><em>manager</em>, <em>internal</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.service.ManagedService" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-dialog_bot_sdk">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-dialog_bot_sdk" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div><!-- /row -->
+
+      <!-- row -->
+      <div class="row footer-relbar">
+<div id="navbar-related" class=" related navbar navbar-default" role="navigation" aria-label="related navigation">
+  <div class="navbar-inner">
+    <ul class="nav navbar-nav ">
+        <li><a href="index.html">Python Bot SDK 0.0.1 documentation</a></li>
+    </ul>
+<ul class="nav navbar-nav pull-right hidden-xs hidden-sm">
+      
+        <li><a href="py-modindex.html" title="Python Module Index" >modules</a></li>
+        <li><a href="genindex.html" title="General Index" >index</a></li>
+        <li><a href="#">top</a></li> 
+      
+    </ul>
+  </div>
+</div>
+      </div><!-- /row -->
+
+      <!-- footer -->
+      <footer role="contentinfo">
+          &copy; Copyright 2018, Dialog, LLC.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.8.1.
+      </footer>
+      <!-- /footer -->
+
+    </div>
+    <!-- /container -->
+
+  </body>
+</html>
