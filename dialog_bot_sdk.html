@@ -1,176 +1,185 @@
+
+
+
 <!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>dialog_bot_sdk package &mdash; Python Bot SDK 0.0.1 documentation</title>
+  
 
+  
+  
+  
+  
 
+  
 
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
+  
+  
     
-    <title>dialog_bot_sdk package &mdash; Python Bot SDK 0.0.1 documentation</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/jquery.fancybox.min.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/glpi.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Python Bot SDK 0.0.1 documentation" href="index.html"/>
+        <link rel="next" title="dialog_bot_sdk.internal package" href="dialog_bot_sdk.internal.html"/>
+        <link rel="prev" title="dialog_api.scalapb package" href="dialog_api.scalapb.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
 
     
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
 
-<link rel="stylesheet" href="_static/css/basicstrap-base.css" type="text/css" />
-<link rel="stylesheet" id="current-theme" href="_static/css/bootstrap3/bootstrap.min.css" type="text/css" />
-<link rel="stylesheet" id="current-adjust-theme" type="text/css" />
+          
+            <a href="index.html" class="icon icon-home"> Python Bot SDK
+          
 
-<link rel="stylesheet" href="_static/css/font-awesome.min.css">
+          
+          </a>
 
-<style type="text/css">
-  body {
-    padding-top: 60px;
-    padding-bottom: 40px;
-  }
-</style>
-
-<link rel="stylesheet" href="_static/css/basicstrap.css" type="text/css" />
-<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-<script type="text/javascript">
-  var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:    './',
-            VERSION:     '0.0.1',
-            COLLAPSE_INDEX: false,
-            FILE_SUFFIX: '.html',
-            HAS_SOURCE:  true
-  };
-</script>
-    <script type="text/javascript" src="_static/js/jquery.min.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="_static/js/bootstrap3.min.js"></script>
-<script type="text/javascript" src="_static/js/jquery.cookie.min.js"></script>
-<script type="text/javascript" src="_static/js/basicstrap.js"></script>
-<script type="text/javascript">
-</script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="top" title="Python Bot SDK 0.0.1 documentation" href="index.html" /> 
-  </head>
-  <body role="document">
-    <div id="navbar-top" class="navbar navbar-fixed-top navbar-default" role="navigation" aria-label="top navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Python Bot SDK 0.0.1 documentation</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown visible-xs">
-                <a role="button" id="localToc" data-toggle="dropdown" data-target="#" href="#">Table Of Contents <b class="caret"></b></a>
-                <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
-                <ul>
-<li><a class="reference internal" href="#">dialog_bot_sdk package</a><ul>
-<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
-<li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#module-dialog_bot_sdk.bot">dialog_bot_sdk.bot module</a></li>
-<li><a class="reference internal" href="#module-dialog_bot_sdk.entity_manager">dialog_bot_sdk.entity_manager module</a></li>
-<li><a class="reference internal" href="#module-dialog_bot_sdk.interactive_media">dialog_bot_sdk.interactive_media module</a></li>
-<li><a class="reference internal" href="#module-dialog_bot_sdk.messaging">dialog_bot_sdk.messaging module</a></li>
-<li><a class="reference internal" href="#module-dialog_bot_sdk.peers">dialog_bot_sdk.peers module</a></li>
-<li><a class="reference internal" href="#module-dialog_bot_sdk.service">dialog_bot_sdk.service module</a></li>
-<li><a class="reference internal" href="#module-dialog_bot_sdk">Module contents</a></li>
-</ul>
-</li>
-</ul>
-
-                </ul>
-              </li>
-
+          
             
-              <li><a href="py-modindex.html" title="Python Module Index" >modules </a></li>
-              <li><a href="genindex.html" title="General Index" accesskey="I">index </a></li>
-            
-            <li class="visible-xs"><a href="_sources/dialog_bot_sdk.rst.txt" rel="nofollow">Show Source</a></li>
+          
 
-            <li class="visible-xs">
-                <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="search.html" method="get">
-                  <div class="input-append input-group">
-                    <input type="text" class="search-query form-control" name="q" placeholder="Search...">
-                    <span class="input-group-btn">
-                    <input type="submit" class="btn" value="Go" />
-                    </span>
-                  </div>
-                  <input type="hidden" name="check_keywords" value="yes" />
-                  <input type="hidden" name="area" value="default" />
-                </form>
-            </li>
-
-            
-
-          </ul>
-
-        </div>
-      </div>
-    </div>
-    
-
-    <!-- container -->
-    <div class="container-fluid">
-
-      <!-- row -->
-      <div class="row">
-         
-<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
-  <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
-  <h3><a href="index.html">Table of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">dialog_bot_sdk package</a><ul>
-<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
-<li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#module-dialog_bot_sdk.bot">dialog_bot_sdk.bot module</a></li>
-<li><a class="reference internal" href="#module-dialog_bot_sdk.entity_manager">dialog_bot_sdk.entity_manager module</a></li>
-<li><a class="reference internal" href="#module-dialog_bot_sdk.interactive_media">dialog_bot_sdk.interactive_media module</a></li>
-<li><a class="reference internal" href="#module-dialog_bot_sdk.messaging">dialog_bot_sdk.messaging module</a></li>
-<li><a class="reference internal" href="#module-dialog_bot_sdk.peers">dialog_bot_sdk.peers module</a></li>
-<li><a class="reference internal" href="#module-dialog_bot_sdk.service">dialog_bot_sdk.service module</a></li>
-<li><a class="reference internal" href="#module-dialog_bot_sdk">Module contents</a></li>
-</ul>
-</li>
-</ul>
-
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/dialog_bot_sdk.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" role="search">
-  <h3>Quick search</h3>
-  <form class="search form-inline" action="search.html" method="get">
-      <div class="input-append input-group">
-        <input type="text" class="search-query form-control" name="q" placeholder="Search...">
-        <span class="input-group-btn">
-        <input type="submit" class="btn" value="Go" />
-        </span>
-      </div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
 </div>
-  </div>
-</div> 
-        
 
-        <div class="col-md-9" id="content-wrapper">
-          <div class="document" role="main">
-            <div class="documentwrapper">
-              <div class="bodywrapper">
-                <div class="body">
-                  
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dialog_api.html">dialog_api package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">dialog_bot_sdk package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dialog_bot_sdk.internal.html">dialog_bot_sdk.internal package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-dialog_bot_sdk.bot">dialog_bot_sdk.bot module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-dialog_bot_sdk.entity_manager">dialog_bot_sdk.entity_manager module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-dialog_bot_sdk.interactive_media">dialog_bot_sdk.interactive_media module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-dialog_bot_sdk.messaging">dialog_bot_sdk.messaging module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-dialog_bot_sdk.peers">dialog_bot_sdk.peers module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-dialog_bot_sdk.service">dialog_bot_sdk.service module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-dialog_bot_sdk">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Python Bot SDK</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>dialog_bot_sdk package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/dialog_bot_sdk.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="dialog_bot_sdk.internal.html" class="btn btn-neutral float-right" title="dialog_bot_sdk.internal package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="dialog_api.scalapb.html" class="btn btn-neutral" title="dialog_api.scalapb package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
   <div class="section" id="dialog-bot-sdk-package">
 <h1>dialog_bot_sdk package<a class="headerlink" href="#dialog-bot-sdk-package" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="subpackages">
@@ -329,42 +338,83 @@
 </div>
 
 
-                </div>
-              </div>
-            </div>
+           </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
-        </div>
-        
-        
-      </div><!-- /row -->
-
-      <!-- row -->
-      <div class="row footer-relbar">
-<div id="navbar-related" class=" related navbar navbar-default" role="navigation" aria-label="related navigation">
-  <div class="navbar-inner">
-    <ul class="nav navbar-nav ">
-        <li><a href="index.html">Python Bot SDK 0.0.1 documentation</a></li>
-    </ul>
-<ul class="nav navbar-nav pull-right hidden-xs hidden-sm">
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <li><a href="py-modindex.html" title="Python Module Index" >modules</a></li>
-        <li><a href="genindex.html" title="General Index" >index</a></li>
-        <li><a href="#">top</a></li> 
+        <a href="dialog_bot_sdk.internal.html" class="btn btn-neutral float-right" title="dialog_bot_sdk.internal package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-    </ul>
-  </div>
-</div>
-      </div><!-- /row -->
-
-      <!-- footer -->
-      <footer role="contentinfo">
-          &copy; Copyright 2018, Dialog, LLC.
-        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.8.1.
-      </footer>
-      <!-- /footer -->
-
+      
+        <a href="dialog_api.scalapb.html" class="btn btn-neutral" title="dialog_api.scalapb package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
     </div>
-    <!-- /container -->
+  
 
-  </body>
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Dialog, LLC.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="_static/jquery.fancybox.min.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+  <script type="text/javascript">
+    $(function(){
+      $('.image-reference').fancybox();
+    })
+  </script>
+
+</body>
 </html>
