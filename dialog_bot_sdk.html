@@ -103,9 +103,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#module-dialog_bot_sdk.entity_manager">dialog_bot_sdk.entity_manager module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-dialog_bot_sdk.interactive_media">dialog_bot_sdk.interactive_media module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-dialog_bot_sdk.messaging">dialog_bot_sdk.messaging module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_bot_sdk.peers">dialog_bot_sdk.peers module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-dialog_bot_sdk.service">dialog_bot_sdk.service module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_bot_sdk">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -186,14 +184,7 @@
 <h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="dialog_bot_sdk.internal.html">dialog_bot_sdk.internal package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="dialog_bot_sdk.internal.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dialog_bot_sdk.internal.html#module-dialog_bot_sdk.internal.bot">dialog_bot_sdk.internal.bot module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dialog_bot_sdk.internal.html#module-dialog_bot_sdk.internal.peers">dialog_bot_sdk.internal.peers module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dialog_bot_sdk.internal.html#module-dialog_bot_sdk.internal.service">dialog_bot_sdk.internal.service module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dialog_bot_sdk.internal.html#module-dialog_bot_sdk.internal">Module contents</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="dialog_bot_sdk.internal.html">dialog_bot_sdk.internal package</a></li>
 </ul>
 </div>
 </div>
@@ -206,10 +197,27 @@
 <dt id="dialog_bot_sdk.bot.DialogBot">
 <em class="property">class </em><code class="descclassname">dialog_bot_sdk.bot.</code><code class="descname">DialogBot</code><span class="sig-paren">(</span><em>channel</em>, <em>bot_token</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.bot.DialogBot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Main Dialog Bot class.</p>
 <dl class="staticmethod">
 <dt id="dialog_bot_sdk.bot.DialogBot.get_insecure_bot">
 <em class="property">static </em><code class="descname">get_insecure_bot</code><span class="sig-paren">(</span><em>endpoint</em>, <em>bot_token</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.bot.DialogBot.get_insecure_bot" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Returns Dialog bot with established gRPC insecure channel.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>endpoint</strong> – bot’s endpoint address</li>
+<li><strong>bot_token</strong> – bot’s token</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Dialog bot instance</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 </dd></dl>
 
@@ -220,20 +228,42 @@
 <dt id="dialog_bot_sdk.entity_manager.EntityManager">
 <em class="property">class </em><code class="descclassname">dialog_bot_sdk.entity_manager.</code><code class="descname">EntityManager</code><span class="sig-paren">(</span><em>internal</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.entity_manager.EntityManager" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Entity manager class.</p>
 <dl class="method">
 <dt id="dialog_bot_sdk.entity_manager.EntityManager.adopt_peer">
 <code class="descname">adopt_peer</code><span class="sig-paren">(</span><em>peer</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.entity_manager.EntityManager.adopt_peer" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Finds outpeer for given peer and store it in internal peers_to_outpeers dict.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>peer</strong> – Peer object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="method">
 <dt id="dialog_bot_sdk.entity_manager.EntityManager.bootstrap">
 <code class="descname">bootstrap</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.entity_manager.EntityManager.bootstrap" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Finds outpeers for all list of contacts.</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="dialog_bot_sdk.entity_manager.EntityManager.get_outpeer">
 <code class="descname">get_outpeer</code><span class="sig-paren">(</span><em>peer</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.entity_manager.EntityManager.get_outpeer" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Returns outpeer for given peer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>peer</strong> – Peer object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">OutPeer object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 </dd></dl>
 
@@ -244,10 +274,22 @@
 <dt id="dialog_bot_sdk.interactive_media.InteractiveMedia">
 <em class="property">class </em><code class="descclassname">dialog_bot_sdk.interactive_media.</code><code class="descname">InteractiveMedia</code><span class="sig-paren">(</span><em>id</em>, <em>widget</em>, <em>style=None</em>, <em>confirm=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMedia" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Wrapper class for interactive object styling.</p>
 <dl class="method">
 <dt id="dialog_bot_sdk.interactive_media.InteractiveMedia.render">
 <code class="descname">render</code><span class="sig-paren">(</span><em>target</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMedia.render" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Render method for wrapped interactive object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>target</strong> – target interactive object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">wrapped interactive object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="dialog_bot_sdk.interactive_media.InteractiveMedia.style_map">
@@ -260,10 +302,20 @@
 <dt id="dialog_bot_sdk.interactive_media.InteractiveMediaButton">
 <em class="property">class </em><code class="descclassname">dialog_bot_sdk.interactive_media.</code><code class="descname">InteractiveMediaButton</code><span class="sig-paren">(</span><em>value</em>, <em>label=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMediaButton" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Button control class.</p>
 <dl class="method">
 <dt id="dialog_bot_sdk.interactive_media.InteractiveMediaButton.render">
 <code class="descname">render</code><span class="sig-paren">(</span><em>target</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMediaButton.render" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Render method for button</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>target</strong> – target button</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 </dd></dl>
 
@@ -271,10 +323,20 @@
 <dt id="dialog_bot_sdk.interactive_media.InteractiveMediaConfirm">
 <em class="property">class </em><code class="descclassname">dialog_bot_sdk.interactive_media.</code><code class="descname">InteractiveMediaConfirm</code><span class="sig-paren">(</span><em>text=None</em>, <em>title=None</em>, <em>ok=None</em>, <em>dismiss=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMediaConfirm" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Confirm control class.</p>
 <dl class="method">
 <dt id="dialog_bot_sdk.interactive_media.InteractiveMediaConfirm.render">
 <code class="descname">render</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMediaConfirm.render" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Render method for confirm</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">confirm</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 </dd></dl>
 
@@ -282,10 +344,20 @@
 <dt id="dialog_bot_sdk.interactive_media.InteractiveMediaGroup">
 <em class="property">class </em><code class="descclassname">dialog_bot_sdk.interactive_media.</code><code class="descname">InteractiveMediaGroup</code><span class="sig-paren">(</span><em>actions</em>, <em>title=None</em>, <em>description=None</em>, <em>translations=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMediaGroup" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Wrapper class for interactive object grouping.</p>
 <dl class="method">
 <dt id="dialog_bot_sdk.interactive_media.InteractiveMediaGroup.render">
 <code class="descname">render</code><span class="sig-paren">(</span><em>target</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMediaGroup.render" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Render method for group of interactive objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>target</strong> – group of interactive objects</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 </dd></dl>
 
@@ -293,10 +365,20 @@
 <dt id="dialog_bot_sdk.interactive_media.InteractiveMediaSelect">
 <em class="property">class </em><code class="descclassname">dialog_bot_sdk.interactive_media.</code><code class="descname">InteractiveMediaSelect</code><span class="sig-paren">(</span><em>label=None</em>, <em>default_value=None</em>, <em>options=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMediaSelect" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Select control class.</p>
 <dl class="method">
 <dt id="dialog_bot_sdk.interactive_media.InteractiveMediaSelect.render">
 <code class="descname">render</code><span class="sig-paren">(</span><em>target</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMediaSelect.render" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Render method for select</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>target</strong> – target select</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 </dd></dl>
 
@@ -320,20 +402,15 @@
 </dd></dl>
 
 </div>
-<div class="section" id="module-dialog_bot_sdk.peers">
-<span id="dialog-bot-sdk-peers-module"></span><h2>dialog_bot_sdk.peers module<a class="headerlink" href="#module-dialog_bot_sdk.peers" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_bot_sdk.service">
 <span id="dialog-bot-sdk-service-module"></span><h2>dialog_bot_sdk.service module<a class="headerlink" href="#module-dialog_bot_sdk.service" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
 <dt id="dialog_bot_sdk.service.ManagedService">
 <em class="property">class </em><code class="descclassname">dialog_bot_sdk.service.</code><code class="descname">ManagedService</code><span class="sig-paren">(</span><em>manager</em>, <em>internal</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.service.ManagedService" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base class for managed services.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="module-dialog_bot_sdk">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-dialog_bot_sdk" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

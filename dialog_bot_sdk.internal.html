@@ -100,7 +100,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#module-dialog_bot_sdk.internal.bot">dialog_bot_sdk.internal.bot module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#module-dialog_bot_sdk.internal.peers">dialog_bot_sdk.internal.peers module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#module-dialog_bot_sdk.internal.service">dialog_bot_sdk.internal.service module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#module-dialog_bot_sdk.internal">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -112,7 +111,6 @@
 <li class="toctree-l2"><a class="reference internal" href="dialog_bot_sdk.html#module-dialog_bot_sdk.messaging">dialog_bot_sdk.messaging module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dialog_bot_sdk.html#module-dialog_bot_sdk.peers">dialog_bot_sdk.peers module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dialog_bot_sdk.html#module-dialog_bot_sdk.service">dialog_bot_sdk.service module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dialog_bot_sdk.html#module-dialog_bot_sdk">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -198,35 +196,52 @@
 <dt id="dialog_bot_sdk.internal.bot.InternalBot">
 <em class="property">class </em><code class="descclassname">dialog_bot_sdk.internal.bot.</code><code class="descname">InternalBot</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.internal.bot.InternalBot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<dl class="attribute">
-<dt id="dialog_bot_sdk.internal.bot.InternalBot.app_id">
-<code class="descname">app_id</code><em class="property"> = 10</em><a class="headerlink" href="#dialog_bot_sdk.internal.bot.InternalBot.app_id" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="dialog_bot_sdk.internal.bot.InternalBot.app_title">
-<code class="descname">app_title</code><em class="property"> = 'PythonBotSDK/1.0'</em><a class="headerlink" href="#dialog_bot_sdk.internal.bot.InternalBot.app_title" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
+<p>Class with Dialog bot’s internal services.</p>
 <dl class="method">
 <dt id="dialog_bot_sdk.internal.bot.InternalBot.authorize">
 <code class="descname">authorize</code><span class="sig-paren">(</span><em>bot_token</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.internal.bot.InternalBot.authorize" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Authorization function for Internal bot instance.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>bot_token</strong> – bot token</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">auth token (instance of gRPC RequestStartTokenAuth)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="method">
 <dt id="dialog_bot_sdk.internal.bot.InternalBot.get_session_token">
 <code class="descname">get_session_token</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.internal.bot.InternalBot.get_session_token" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="dialog_bot_sdk.internal.bot.InternalBot.token">
-<code class="descname">token</code><em class="property"> = None</em><a class="headerlink" href="#dialog_bot_sdk.internal.bot.InternalBot.token" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Requests for sessions token for device.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">session token</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="method">
 <dt id="dialog_bot_sdk.internal.bot.InternalBot.wrap_service">
 <code class="descname">wrap_service</code><span class="sig-paren">(</span><em>stub_func</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.internal.bot.InternalBot.wrap_service" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Wrapper for authenticating of gRPC service calls.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stub_func</strong> – name of gRPC service</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">wrapped gRPC service</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 </dd></dl>
 
@@ -236,17 +251,50 @@
 <dl class="function">
 <dt id="dialog_bot_sdk.internal.peers.group_peer">
 <code class="descclassname">dialog_bot_sdk.internal.peers.</code><code class="descname">group_peer</code><span class="sig-paren">(</span><em>group_id</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.internal.peers.group_peer" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Returns peer for group by group id</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>group_id</strong> – group id</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Peer object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="function">
 <dt id="dialog_bot_sdk.internal.peers.peer_hasher">
 <code class="descclassname">dialog_bot_sdk.internal.peers.</code><code class="descname">peer_hasher</code><span class="sig-paren">(</span><em>peer</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.internal.peers.peer_hasher" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Returns a hash tuple of peer</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>peer</strong> – Peer object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">hash tuple</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="function">
 <dt id="dialog_bot_sdk.internal.peers.private_peer">
 <code class="descclassname">dialog_bot_sdk.internal.peers.</code><code class="descname">private_peer</code><span class="sig-paren">(</span><em>user_id</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.internal.peers.private_peer" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Returns peer for user by user id</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>user_id</strong> – user id</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Peer object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 </div>
 <div class="section" id="module-dialog_bot_sdk.internal.service">
@@ -255,11 +303,9 @@
 <dt id="dialog_bot_sdk.internal.service.AuthenticatedService">
 <em class="property">class </em><code class="descclassname">dialog_bot_sdk.internal.service.</code><code class="descname">AuthenticatedService</code><span class="sig-paren">(</span><em>auth_token_func</em>, <em>stub</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.internal.service.AuthenticatedService" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Initialization class for gRPC services.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="module-dialog_bot_sdk.internal">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-dialog_bot_sdk.internal" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
