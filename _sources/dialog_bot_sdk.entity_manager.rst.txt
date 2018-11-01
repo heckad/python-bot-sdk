@@ -1,0 +1,7 @@
+``dialog_bot_sdk.entity_manager`` module
+=========================================
+
+.. automodule:: dialog_bot_sdk.entity_manager
+    :members:
+    :undoc-members:
+    :show-inheritance:

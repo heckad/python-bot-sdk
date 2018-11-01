@@ -1,253 +1,94 @@
-
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>dialog_api package &mdash; Python Bot SDK 0.0.1 documentation</title>
-  
 
-  
-  
-  
-  
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>gRPC API Schema Reference (dialog_api package) &#8212; Dialog Python Bot SDK 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
 
-  
+  </head><body>
 
-  
-  
-    
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Dialog Python Bot SDK</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
 
-  
-
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="_static/jquery.fancybox.min.css" type="text/css" />
-  
-    <link rel="stylesheet" href="_static/glpi.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Python Bot SDK 0.0.1 documentation" href="index.html"/>
-        <link rel="next" title="dialog_api.scalapb package" href="dialog_api.scalapb.html"/>
-        <link rel="prev" title="Dialog Python Bot SDK" href="index.html"/> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-   
-  <div class="wy-grid-for-nav">
-
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
-          
-
-          
-            <a href="index.html" class="icon icon-home"> Python Bot SDK
-          
-
-          
-          </a>
-
-          
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
             
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
+                <li><a href="dialog_bot_sdk.html">Bot SDK Reference</a></li>
+                <li><a href="#">Dialog gRPC API Schema Reference</a></li>
+                <li><a href="dialog_bot_sdk_examples.html">Examples</a></li>
             
             
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">dialog_api package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="dialog_api.scalapb.html">dialog_api.scalapb package</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.authentication_pb2">dialog_api.authentication_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.authentication_pb2_grpc">dialog_api.authentication_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.config_sync_pb2">dialog_api.config_sync_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.config_sync_pb2_grpc">dialog_api.config_sync_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.contacts_pb2">dialog_api.contacts_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.contacts_pb2_grpc">dialog_api.contacts_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.counters_pb2">dialog_api.counters_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.counters_pb2_grpc">dialog_api.counters_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.crypto_pb2">dialog_api.crypto_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.crypto_pb2_grpc">dialog_api.crypto_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#dialog-api-definitions-pb2-module">dialog_api.definitions_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.definitions_pb2_grpc">dialog_api.definitions_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.device_info_pb2">dialog_api.device_info_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.device_info_pb2_grpc">dialog_api.device_info_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.event_bus_pb2">dialog_api.event_bus_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.event_bus_pb2_grpc">dialog_api.event_bus_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.groups_pb2">dialog_api.groups_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.groups_pb2_grpc">dialog_api.groups_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.integrations_pb2">dialog_api.integrations_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.integrations_pb2_grpc">dialog_api.integrations_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.media_and_files_pb2">dialog_api.media_and_files_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.media_and_files_pb2_grpc">dialog_api.media_and_files_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.messaging_pb2">dialog_api.messaging_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.messaging_pb2_grpc">dialog_api.messaging_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.miscellaneous_pb2">dialog_api.miscellaneous_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.miscellaneous_pb2_grpc">dialog_api.miscellaneous_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.obsolete_pb2">dialog_api.obsolete_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.obsolete_pb2_grpc">dialog_api.obsolete_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.peers_pb2">dialog_api.peers_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.peers_pb2_grpc">dialog_api.peers_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.privacy_pb2">dialog_api.privacy_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.privacy_pb2_grpc">dialog_api.privacy_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.profile_pb2">dialog_api.profile_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.profile_pb2_grpc">dialog_api.profile_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.push_pb2">dialog_api.push_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.push_pb2_grpc">dialog_api.push_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.raw_api_pb2">dialog_api.raw_api_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.raw_api_pb2_grpc">dialog_api.raw_api_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.registration_pb2">dialog_api.registration_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.registration_pb2_grpc">dialog_api.registration_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.search_pb2">dialog_api.search_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.search_pb2_grpc">dialog_api.search_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.sequence_and_updates_pb2">dialog_api.sequence_and_updates_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.sequence_and_updates_pb2_grpc">dialog_api.sequence_and_updates_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.stickers_pb2">dialog_api.stickers_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.stickers_pb2_grpc">dialog_api.stickers_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.typing_and_online_pb2">dialog_api.typing_and_online_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.typing_and_online_pb2_grpc">dialog_api.typing_and_online_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.users_pb2">dialog_api.users_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.users_pb2_grpc">dialog_api.users_pb2_grpc module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.web_rtc_pb2">dialog_api.web_rtc_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-dialog_api.web_rtc_pb2_grpc">dialog_api.web_rtc_pb2_grpc module</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="dialog_bot_sdk.html">dialog_bot_sdk package</a></li>
-</ul>
-
             
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
           
         </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">Python Bot SDK</a>
-        
-      </nav>
-
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
-      <li>dialog_api package</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            <a href="_sources/dialog_api.rst.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
-      
-        <a href="dialog_api.scalapb.html" class="btn btn-neutral float-right" title="dialog_api.scalapb package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="index.html" class="btn btn-neutral" title="Dialog Python Bot SDK" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+    </div>
   </div>
-  
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-            
-  <div class="section" id="dialog-api-package">
-<h1>dialog_api package<a class="headerlink" href="#dialog-api-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="subpackages">
-<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="dialog_api.scalapb.html">dialog_api.scalapb package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="dialog_api.scalapb.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dialog_api.scalapb.html#dialog-api-scalapb-scalapb-pb2-module">dialog_api.scalapb.scalapb_pb2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dialog_api.scalapb.html#module-dialog_api.scalapb.scalapb_pb2_grpc">dialog_api.scalapb.scalapb_pb2_grpc module</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div class="section" id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-dialog_api.authentication_pb2">
-<span id="dialog-api-authentication-pb2-module"></span><h2>dialog_api.authentication_pb2 module<a class="headerlink" href="#module-dialog_api.authentication_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="section" id="grpc-api-schema-reference-dialog-api-package">
+<h1>gRPC API Schema Reference (<code class="docutils literal notranslate"><span class="pre">dialog_api</span></code> package)<a class="headerlink" href="#grpc-api-schema-reference-dialog-api-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="modules">
+<h2>Modules:<a class="headerlink" href="#modules" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="module-dialog_api.authentication_pb2_grpc">
-<span id="dialog-api-authentication-pb2-grpc-module"></span><h2>dialog_api.authentication_pb2_grpc module<a class="headerlink" href="#module-dialog_api.authentication_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-authentication-pb2-grpc-module"></span><h3><strong>dialog_api.authentication_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.authentication_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.authentication_pb2_grpc.AuthenticationServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.authentication_pb2_grpc.</code><code class="descname">AuthenticationServicer</code><a class="headerlink" href="#dialog_api.authentication_pb2_grpc.AuthenticationServicer" title="Permalink to this definition">¶</a></dt>
@@ -389,11 +230,8 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.config_sync_pb2">
-<span id="dialog-api-config-sync-pb2-module"></span><h2>dialog_api.config_sync_pb2 module<a class="headerlink" href="#module-dialog_api.config_sync_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.config_sync_pb2_grpc">
-<span id="dialog-api-config-sync-pb2-grpc-module"></span><h2>dialog_api.config_sync_pb2_grpc module<a class="headerlink" href="#module-dialog_api.config_sync_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-config-sync-pb2-grpc-module"></span><h3><strong>dialog_api.config_sync_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.config_sync_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.config_sync_pb2_grpc.ConfigSyncServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.config_sync_pb2_grpc.</code><code class="descname">ConfigSyncServicer</code><a class="headerlink" href="#dialog_api.config_sync_pb2_grpc.ConfigSyncServicer" title="Permalink to this definition">¶</a></dt>
@@ -422,11 +260,8 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.contacts_pb2">
-<span id="dialog-api-contacts-pb2-module"></span><h2>dialog_api.contacts_pb2 module<a class="headerlink" href="#module-dialog_api.contacts_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.contacts_pb2_grpc">
-<span id="dialog-api-contacts-pb2-grpc-module"></span><h2>dialog_api.contacts_pb2_grpc module<a class="headerlink" href="#module-dialog_api.contacts_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-contacts-pb2-grpc-module"></span><h3><strong>dialog_api.contacts_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.contacts_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.contacts_pb2_grpc.ContactsServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.contacts_pb2_grpc.</code><code class="descname">ContactsServicer</code><a class="headerlink" href="#dialog_api.contacts_pb2_grpc.ContactsServicer" title="Permalink to this definition">¶</a></dt>
@@ -478,17 +313,11 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.counters_pb2">
-<span id="dialog-api-counters-pb2-module"></span><h2>dialog_api.counters_pb2 module<a class="headerlink" href="#module-dialog_api.counters_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.counters_pb2_grpc">
-<span id="dialog-api-counters-pb2-grpc-module"></span><h2>dialog_api.counters_pb2_grpc module<a class="headerlink" href="#module-dialog_api.counters_pb2_grpc" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-dialog_api.crypto_pb2">
-<span id="dialog-api-crypto-pb2-module"></span><h2>dialog_api.crypto_pb2 module<a class="headerlink" href="#module-dialog_api.crypto_pb2" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-counters-pb2-grpc-module"></span><h3><strong>dialog_api.counters_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.counters_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="module-dialog_api.crypto_pb2_grpc">
-<span id="dialog-api-crypto-pb2-grpc-module"></span><h2>dialog_api.crypto_pb2_grpc module<a class="headerlink" href="#module-dialog_api.crypto_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-crypto-pb2-grpc-module"></span><h3><strong>dialog_api.crypto_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.crypto_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.crypto_pb2_grpc.CryptoServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.crypto_pb2_grpc.</code><code class="descname">CryptoServicer</code><a class="headerlink" href="#dialog_api.crypto_pb2_grpc.CryptoServicer" title="Permalink to this definition">¶</a></dt>
@@ -512,17 +341,11 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="dialog-api-definitions-pb2-module">
-<h2>dialog_api.definitions_pb2 module<a class="headerlink" href="#dialog-api-definitions-pb2-module" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.definitions_pb2_grpc">
-<span id="dialog-api-definitions-pb2-grpc-module"></span><h2>dialog_api.definitions_pb2_grpc module<a class="headerlink" href="#module-dialog_api.definitions_pb2_grpc" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-dialog_api.device_info_pb2">
-<span id="dialog-api-device-info-pb2-module"></span><h2>dialog_api.device_info_pb2 module<a class="headerlink" href="#module-dialog_api.device_info_pb2" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-definitions-pb2-grpc-module"></span><h3><strong>dialog_api.definitions_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.definitions_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="module-dialog_api.device_info_pb2_grpc">
-<span id="dialog-api-device-info-pb2-grpc-module"></span><h2>dialog_api.device_info_pb2_grpc module<a class="headerlink" href="#module-dialog_api.device_info_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-device-info-pb2-grpc-module"></span><h3><strong>dialog_api.device_info_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.device_info_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.device_info_pb2_grpc.DeviceInfoServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.device_info_pb2_grpc.</code><code class="descname">DeviceInfoServicer</code><a class="headerlink" href="#dialog_api.device_info_pb2_grpc.DeviceInfoServicer" title="Permalink to this definition">¶</a></dt>
@@ -547,11 +370,8 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.event_bus_pb2">
-<span id="dialog-api-event-bus-pb2-module"></span><h2>dialog_api.event_bus_pb2 module<a class="headerlink" href="#module-dialog_api.event_bus_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.event_bus_pb2_grpc">
-<span id="dialog-api-event-bus-pb2-grpc-module"></span><h2>dialog_api.event_bus_pb2_grpc module<a class="headerlink" href="#module-dialog_api.event_bus_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-event-bus-pb2-grpc-module"></span><h3><strong>dialog_api.event_bus_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.event_bus_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.event_bus_pb2_grpc.EventBusServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.event_bus_pb2_grpc.</code><code class="descname">EventBusServicer</code><a class="headerlink" href="#dialog_api.event_bus_pb2_grpc.EventBusServicer" title="Permalink to this definition">¶</a></dt>
@@ -585,11 +405,8 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.groups_pb2">
-<span id="dialog-api-groups-pb2-module"></span><h2>dialog_api.groups_pb2 module<a class="headerlink" href="#module-dialog_api.groups_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.groups_pb2_grpc">
-<span id="dialog-api-groups-pb2-grpc-module"></span><h2>dialog_api.groups_pb2_grpc module<a class="headerlink" href="#module-dialog_api.groups_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-groups-pb2-grpc-module"></span><h3><strong>dialog_api.groups_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.groups_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.groups_pb2_grpc.GroupsServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.groups_pb2_grpc.</code><code class="descname">GroupsServicer</code><a class="headerlink" href="#dialog_api.groups_pb2_grpc.GroupsServicer" title="Permalink to this definition">¶</a></dt>
@@ -714,11 +531,8 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.integrations_pb2">
-<span id="dialog-api-integrations-pb2-module"></span><h2>dialog_api.integrations_pb2 module<a class="headerlink" href="#module-dialog_api.integrations_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.integrations_pb2_grpc">
-<span id="dialog-api-integrations-pb2-grpc-module"></span><h2>dialog_api.integrations_pb2_grpc module<a class="headerlink" href="#module-dialog_api.integrations_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-integrations-pb2-grpc-module"></span><h3><strong>dialog_api.integrations_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.integrations_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.integrations_pb2_grpc.IntegrationsServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.integrations_pb2_grpc.</code><code class="descname">IntegrationsServicer</code><a class="headerlink" href="#dialog_api.integrations_pb2_grpc.IntegrationsServicer" title="Permalink to this definition">¶</a></dt>
@@ -749,11 +563,8 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.media_and_files_pb2">
-<span id="dialog-api-media-and-files-pb2-module"></span><h2>dialog_api.media_and_files_pb2 module<a class="headerlink" href="#module-dialog_api.media_and_files_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.media_and_files_pb2_grpc">
-<span id="dialog-api-media-and-files-pb2-grpc-module"></span><h2>dialog_api.media_and_files_pb2_grpc module<a class="headerlink" href="#module-dialog_api.media_and_files_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-media-and-files-pb2-grpc-module"></span><h3><strong>dialog_api.media_and_files_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.media_and_files_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.media_and_files_pb2_grpc.MediaAndFilesServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.media_and_files_pb2_grpc.</code><code class="descname">MediaAndFilesServicer</code><a class="headerlink" href="#dialog_api.media_and_files_pb2_grpc.MediaAndFilesServicer" title="Permalink to this definition">¶</a></dt>
@@ -808,11 +619,8 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.messaging_pb2">
-<span id="dialog-api-messaging-pb2-module"></span><h2>dialog_api.messaging_pb2 module<a class="headerlink" href="#module-dialog_api.messaging_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.messaging_pb2_grpc">
-<span id="dialog-api-messaging-pb2-grpc-module"></span><h2>dialog_api.messaging_pb2_grpc module<a class="headerlink" href="#module-dialog_api.messaging_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-messaging-pb2-grpc-module"></span><h3><strong>dialog_api.messaging_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.messaging_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.messaging_pb2_grpc.MessagingServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.messaging_pb2_grpc.</code><code class="descname">MessagingServicer</code><a class="headerlink" href="#dialog_api.messaging_pb2_grpc.MessagingServicer" title="Permalink to this definition">¶</a></dt>
@@ -960,17 +768,11 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.miscellaneous_pb2">
-<span id="dialog-api-miscellaneous-pb2-module"></span><h2>dialog_api.miscellaneous_pb2 module<a class="headerlink" href="#module-dialog_api.miscellaneous_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.miscellaneous_pb2_grpc">
-<span id="dialog-api-miscellaneous-pb2-grpc-module"></span><h2>dialog_api.miscellaneous_pb2_grpc module<a class="headerlink" href="#module-dialog_api.miscellaneous_pb2_grpc" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-dialog_api.obsolete_pb2">
-<span id="dialog-api-obsolete-pb2-module"></span><h2>dialog_api.obsolete_pb2 module<a class="headerlink" href="#module-dialog_api.obsolete_pb2" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-miscellaneous-pb2-grpc-module"></span><h3><strong>dialog_api.miscellaneous_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.miscellaneous_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="module-dialog_api.obsolete_pb2_grpc">
-<span id="dialog-api-obsolete-pb2-grpc-module"></span><h2>dialog_api.obsolete_pb2_grpc module<a class="headerlink" href="#module-dialog_api.obsolete_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-obsolete-pb2-grpc-module"></span><h3><strong>dialog_api.obsolete_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.obsolete_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.obsolete_pb2_grpc.ObsoleteServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.obsolete_pb2_grpc.</code><code class="descname">ObsoleteServicer</code><a class="headerlink" href="#dialog_api.obsolete_pb2_grpc.ObsoleteServicer" title="Permalink to this definition">¶</a></dt>
@@ -1006,17 +808,11 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.peers_pb2">
-<span id="dialog-api-peers-pb2-module"></span><h2>dialog_api.peers_pb2 module<a class="headerlink" href="#module-dialog_api.peers_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.peers_pb2_grpc">
-<span id="dialog-api-peers-pb2-grpc-module"></span><h2>dialog_api.peers_pb2_grpc module<a class="headerlink" href="#module-dialog_api.peers_pb2_grpc" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-dialog_api.privacy_pb2">
-<span id="dialog-api-privacy-pb2-module"></span><h2>dialog_api.privacy_pb2 module<a class="headerlink" href="#module-dialog_api.privacy_pb2" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-peers-pb2-grpc-module"></span><h3><strong>dialog_api.peers_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.peers_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="module-dialog_api.privacy_pb2_grpc">
-<span id="dialog-api-privacy-pb2-grpc-module"></span><h2>dialog_api.privacy_pb2_grpc module<a class="headerlink" href="#module-dialog_api.privacy_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-privacy-pb2-grpc-module"></span><h3><strong>dialog_api.privacy_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.privacy_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.privacy_pb2_grpc.PrivacyServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.privacy_pb2_grpc.</code><code class="descname">PrivacyServicer</code><a class="headerlink" href="#dialog_api.privacy_pb2_grpc.PrivacyServicer" title="Permalink to this definition">¶</a></dt>
@@ -1050,11 +846,8 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.profile_pb2">
-<span id="dialog-api-profile-pb2-module"></span><h2>dialog_api.profile_pb2 module<a class="headerlink" href="#module-dialog_api.profile_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.profile_pb2_grpc">
-<span id="dialog-api-profile-pb2-grpc-module"></span><h2>dialog_api.profile_pb2_grpc module<a class="headerlink" href="#module-dialog_api.profile_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-profile-pb2-grpc-module"></span><h3><strong>dialog_api.profile_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.profile_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.profile_pb2_grpc.ProfileServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.profile_pb2_grpc.</code><code class="descname">ProfileServicer</code><a class="headerlink" href="#dialog_api.profile_pb2_grpc.ProfileServicer" title="Permalink to this definition">¶</a></dt>
@@ -1128,11 +921,8 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.push_pb2">
-<span id="dialog-api-push-pb2-module"></span><h2>dialog_api.push_pb2 module<a class="headerlink" href="#module-dialog_api.push_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.push_pb2_grpc">
-<span id="dialog-api-push-pb2-grpc-module"></span><h2>dialog_api.push_pb2_grpc module<a class="headerlink" href="#module-dialog_api.push_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-push-pb2-module"></span><h3><strong>dialog_api.push_pb2</strong> module<a class="headerlink" href="#module-dialog_api.push_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.push_pb2_grpc.PushServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.push_pb2_grpc.</code><code class="descname">PushServicer</code><a class="headerlink" href="#dialog_api.push_pb2_grpc.PushServicer" title="Permalink to this definition">¶</a></dt>
@@ -1191,11 +981,8 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.raw_api_pb2">
-<span id="dialog-api-raw-api-pb2-module"></span><h2>dialog_api.raw_api_pb2 module<a class="headerlink" href="#module-dialog_api.raw_api_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.raw_api_pb2_grpc">
-<span id="dialog-api-raw-api-pb2-grpc-module"></span><h2>dialog_api.raw_api_pb2_grpc module<a class="headerlink" href="#module-dialog_api.raw_api_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-raw-api-pb2-grpc-module"></span><h3><strong>dialog_api.raw_api_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.raw_api_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.raw_api_pb2_grpc.RawAPIServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.raw_api_pb2_grpc.</code><code class="descname">RawAPIServicer</code><a class="headerlink" href="#dialog_api.raw_api_pb2_grpc.RawAPIServicer" title="Permalink to this definition">¶</a></dt>
@@ -1219,11 +1006,8 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.registration_pb2">
-<span id="dialog-api-registration-pb2-module"></span><h2>dialog_api.registration_pb2 module<a class="headerlink" href="#module-dialog_api.registration_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.registration_pb2_grpc">
-<span id="dialog-api-registration-pb2-grpc-module"></span><h2>dialog_api.registration_pb2_grpc module<a class="headerlink" href="#module-dialog_api.registration_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-registration-pb2-grpc-module"></span><h3><strong>dialog_api.registration_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.registration_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.registration_pb2_grpc.RegistrationServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.registration_pb2_grpc.</code><code class="descname">RegistrationServicer</code><a class="headerlink" href="#dialog_api.registration_pb2_grpc.RegistrationServicer" title="Permalink to this definition">¶</a></dt>
@@ -1259,11 +1043,8 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.search_pb2">
-<span id="dialog-api-search-pb2-module"></span><h2>dialog_api.search_pb2 module<a class="headerlink" href="#module-dialog_api.search_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.search_pb2_grpc">
-<span id="dialog-api-search-pb2-grpc-module"></span><h2>dialog_api.search_pb2_grpc module<a class="headerlink" href="#module-dialog_api.search_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-search-pb2-grpc-module"></span><h3><strong>dialog_api.search_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.search_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.search_pb2_grpc.SearchServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.search_pb2_grpc.</code><code class="descname">SearchServicer</code><a class="headerlink" href="#dialog_api.search_pb2_grpc.SearchServicer" title="Permalink to this definition">¶</a></dt>
@@ -1315,11 +1096,8 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.sequence_and_updates_pb2">
-<span id="dialog-api-sequence-and-updates-pb2-module"></span><h2>dialog_api.sequence_and_updates_pb2 module<a class="headerlink" href="#module-dialog_api.sequence_and_updates_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.sequence_and_updates_pb2_grpc">
-<span id="dialog-api-sequence-and-updates-pb2-grpc-module"></span><h2>dialog_api.sequence_and_updates_pb2_grpc module<a class="headerlink" href="#module-dialog_api.sequence_and_updates_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-sequence-and-updates-pb2-grpc-module"></span><h3><strong>dialog_api.sequence_and_updates_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.sequence_and_updates_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.sequence_and_updates_pb2_grpc.SequenceAndUpdatesServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.sequence_and_updates_pb2_grpc.</code><code class="descname">SequenceAndUpdatesServicer</code><a class="headerlink" href="#dialog_api.sequence_and_updates_pb2_grpc.SequenceAndUpdatesServicer" title="Permalink to this definition">¶</a></dt>
@@ -1388,11 +1166,8 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.stickers_pb2">
-<span id="dialog-api-stickers-pb2-module"></span><h2>dialog_api.stickers_pb2 module<a class="headerlink" href="#module-dialog_api.stickers_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.stickers_pb2_grpc">
-<span id="dialog-api-stickers-pb2-grpc-module"></span><h2>dialog_api.stickers_pb2_grpc module<a class="headerlink" href="#module-dialog_api.stickers_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-stickers-pb2-grpc-module"></span><h3><strong>dialog_api.stickers_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.stickers_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.stickers_pb2_grpc.StickersServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.stickers_pb2_grpc.</code><code class="descname">StickersServicer</code><a class="headerlink" href="#dialog_api.stickers_pb2_grpc.StickersServicer" title="Permalink to this definition">¶</a></dt>
@@ -1446,11 +1221,8 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.typing_and_online_pb2">
-<span id="dialog-api-typing-and-online-pb2-module"></span><h2>dialog_api.typing_and_online_pb2 module<a class="headerlink" href="#module-dialog_api.typing_and_online_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.typing_and_online_pb2_grpc">
-<span id="dialog-api-typing-and-online-pb2-grpc-module"></span><h2>dialog_api.typing_and_online_pb2_grpc module<a class="headerlink" href="#module-dialog_api.typing_and_online_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-typing-and-online-pb2-grpc-module"></span><h3><strong>dialog_api.typing_and_online_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.typing_and_online_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.typing_and_online_pb2_grpc.TypingAndOnlineServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.typing_and_online_pb2_grpc.</code><code class="descname">TypingAndOnlineServicer</code><a class="headerlink" href="#dialog_api.typing_and_online_pb2_grpc.TypingAndOnlineServicer" title="Permalink to this definition">¶</a></dt>
@@ -1494,11 +1266,8 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.users_pb2">
-<span id="dialog-api-users-pb2-module"></span><h2>dialog_api.users_pb2 module<a class="headerlink" href="#module-dialog_api.users_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.users_pb2_grpc">
-<span id="dialog-api-users-pb2-grpc-module"></span><h2>dialog_api.users_pb2_grpc module<a class="headerlink" href="#module-dialog_api.users_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-users-pb2-grpc-module"></span><h3><strong>dialog_api.users_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.users_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.users_pb2_grpc.UsersServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.users_pb2_grpc.</code><code class="descname">UsersServicer</code><a class="headerlink" href="#dialog_api.users_pb2_grpc.UsersServicer" title="Permalink to this definition">¶</a></dt>
@@ -1528,11 +1297,8 @@
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-dialog_api.web_rtc_pb2">
-<span id="dialog-api-web-rtc-pb2-module"></span><h2>dialog_api.web_rtc_pb2 module<a class="headerlink" href="#module-dialog_api.web_rtc_pb2" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="module-dialog_api.web_rtc_pb2_grpc">
-<span id="dialog-api-web-rtc-pb2-grpc-module"></span><h2>dialog_api.web_rtc_pb2_grpc module<a class="headerlink" href="#module-dialog_api.web_rtc_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<span id="dialog-api-web-rtc-pb2-grpc-module"></span><h3><strong>dialog_api.web_rtc_pb2_grpc</strong> module<a class="headerlink" href="#module-dialog_api.web_rtc_pb2_grpc" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_api.web_rtc_pb2_grpc.WebRTCServicer">
 <em class="property">class </em><code class="descclassname">dialog_api.web_rtc_pb2_grpc.</code><code class="descname">WebRTCServicer</code><a class="headerlink" href="#dialog_api.web_rtc_pb2_grpc.WebRTCServicer" title="Permalink to this definition">¶</a></dt>
@@ -1587,85 +1353,24 @@
 
 </div>
 </div>
+</div>
 
 
-           </div>
-           <div class="articleComments">
-            
-           </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="dialog_api.scalapb.html" class="btn btn-neutral float-right" title="dialog_api.scalapb package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="index.html" class="btn btn-neutral" title="Dialog Python Bot SDK" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
     </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
     <p>
-        &copy; Copyright 2018, Dialog, LLC.
-
+        &copy; Copyright 2018, Dialog, LLC.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1.<br/>
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
-
 </footer>
-
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-  
-
-
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'0.0.1',
-            LANGUAGE:'None',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-      <script type="text/javascript" src="_static/jquery.fancybox.min.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
-  
-  
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
-      });
-  </script>
-  
-  <script type="text/javascript">
-    $(function(){
-      $('.image-reference').fancybox();
-    })
-  </script>
-
-</body>
+  </body>
 </html>

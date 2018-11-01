@@ -1,0 +1,7 @@
+``dialog_bot_sdk.bot`` module
+=============================
+
+.. automodule:: dialog_bot_sdk.bot
+    :members:
+    :undoc-members:
+    :show-inheritance:
