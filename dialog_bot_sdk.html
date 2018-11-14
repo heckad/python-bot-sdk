@@ -294,15 +294,109 @@
 <dt id="dialog_bot_sdk.messaging.Messaging">
 <em class="property">class </em><code class="descclassname">dialog_bot_sdk.messaging.</code><code class="descname">Messaging</code><span class="sig-paren">(</span><em>manager</em>, <em>internal</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.messaging.Messaging" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#dialog_bot_sdk.service.ManagedService" title="dialog_bot_sdk.service.ManagedService"><code class="xref py py-class docutils literal notranslate"><span class="pre">dialog_bot_sdk.service.ManagedService</span></code></a></p>
+<p>Main messaging class.</p>
 <dl class="method">
 <dt id="dialog_bot_sdk.messaging.Messaging.on_message">
 <code class="descname">on_message</code><span class="sig-paren">(</span><em>callback</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.messaging.Messaging.on_message" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Message receiving event handler.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>callback</strong> – function that will be called when message received</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="dialog_bot_sdk.messaging.Messaging.send_file">
+<code class="descname">send_file</code><span class="sig-paren">(</span><em>peer</em>, <em>file</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.messaging.Messaging.send_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send file to current peer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>peer</strong> – receiver’s peer</li>
+<li><strong>file</strong> – path to file</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">mid value of SendMessage response object</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="method">
 <dt id="dialog_bot_sdk.messaging.Messaging.send_message">
 <code class="descname">send_message</code><span class="sig-paren">(</span><em>peer</em>, <em>text</em>, <em>interactive_media_groups=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.messaging.Messaging.send_message" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Send message to current peer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>peer</strong> – receiver’s peer</li>
+<li><strong>text</strong> – message text</li>
+<li><strong>interactive_media_groups</strong> – groups of interactive media components (buttons etc.)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">mid value of SendMessage response object</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="dialog_bot_sdk.messaging.Messaging.upload_file">
+<code class="descname">upload_file</code><span class="sig-paren">(</span><em>file</em>, <em>max_chunk_size=1048576</em>, <em>parallelism=10</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.messaging.Messaging.upload_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upload file for sending.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>file</strong> – path to file</li>
+<li><strong>max_chunk_size</strong> – maximum size of one chunk</li>
+<li><strong>parallelism</strong> – number of uploading threads</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">FileLocation object if success or None otherwise</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="dialog_bot_sdk.messaging.Messaging.upload_file_chunk">
+<code class="descname">upload_file_chunk</code><span class="sig-paren">(</span><em>part_number</em>, <em>chunk</em>, <em>upload_key</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.messaging.Messaging.upload_file_chunk" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upload file chunk.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>part_number</strong> – number of chunk</li>
+<li><strong>chunk</strong> – chunk content</li>
+<li><strong>upload_key</strong> – upload key (need to be received from RequestGetFileUploadUrl request before uploading)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Response of HTTP PUT request if success or None otherwise</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 </dd></dl>
 
