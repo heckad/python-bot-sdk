@@ -177,7 +177,7 @@
 <span id="dialog-bot-sdk-interactive-media-module"></span><h3><strong>dialog_bot_sdk.interactive_media</strong> module<a class="headerlink" href="#module-dialog_bot_sdk.interactive_media" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="dialog_bot_sdk.interactive_media.InteractiveMedia">
-<em class="property">class </em><code class="descclassname">dialog_bot_sdk.interactive_media.</code><code class="descname">InteractiveMedia</code><span class="sig-paren">(</span><em>id</em>, <em>widget</em>, <em>style=None</em>, <em>confirm=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMedia" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">dialog_bot_sdk.interactive_media.</code><code class="descname">InteractiveMedia</code><span class="sig-paren">(</span><em>media_id</em>, <em>widget</em>, <em>style=None</em>, <em>confirm=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMedia" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Wrapper class for interactive object styling.</p>
 <dl class="method">
@@ -268,7 +268,7 @@
 
 <dl class="class">
 <dt id="dialog_bot_sdk.interactive_media.InteractiveMediaSelect">
-<em class="property">class </em><code class="descclassname">dialog_bot_sdk.interactive_media.</code><code class="descname">InteractiveMediaSelect</code><span class="sig-paren">(</span><em>label=None</em>, <em>default_value=None</em>, <em>options=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMediaSelect" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">dialog_bot_sdk.interactive_media.</code><code class="descname">InteractiveMediaSelect</code><span class="sig-paren">(</span><em>options</em>, <em>label=None</em>, <em>default_value=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.interactive_media.InteractiveMediaSelect" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Select control class.</p>
 <dl class="method">
@@ -333,86 +333,42 @@
 </dd></dl>
 
 <dl class="method">
-<dt id="dialog_bot_sdk.messaging.Messaging.send_message">
-<code class="descname">send_message</code><span class="sig-paren">(</span><em>peer</em>, <em>text</em>, <em>interactive_media_groups=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.messaging.Messaging.send_message" title="Permalink to this definition">¶</a></dt>
-<dd><p>Send message to current peer.</p>
+<dt id="dialog_bot_sdk.messaging.Messaging.send_image">
+<code class="descname">send_image</code><span class="sig-paren">(</span><em>peer</em>, <em>file</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.messaging.Messaging.send_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send image as image (not as file) to current peer.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>peer</strong> – receiver’s peer</li>
-<li><strong>text</strong> – message text</li>
+<li><strong>file</strong> – path to image file</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">mid value of SendMessage response object</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="dialog_bot_sdk.messaging.Messaging.send_message">
+<code class="descname">send_message</code><span class="sig-paren">(</span><em>peer</em>, <em>text</em>, <em>interactive_media_groups=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.messaging.Messaging.send_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send text message to current peer. Message can contain interactive media groups (buttons, selects etc.).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>peer</strong> – receiver’s peer</li>
+<li><strong>text</strong> – message text (not null)</li>
 <li><strong>interactive_media_groups</strong> – groups of interactive media components (buttons etc.)</li>
 </ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">mid value of SendMessage response object</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="dialog_bot_sdk.messaging.Messaging.send_photo">
-<code class="descname">send_photo</code><span class="sig-paren">(</span><em>peer</em>, <em>file</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.messaging.Messaging.send_photo" title="Permalink to this definition">¶</a></dt>
-<dd><p>Send photo as photo (not as file) to current peer.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>peer</strong> – receiver’s peer</li>
-<li><strong>file</strong> – path to photo file</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">mid value of SendMessage response object</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="dialog_bot_sdk.messaging.Messaging.upload_file">
-<code class="descname">upload_file</code><span class="sig-paren">(</span><em>file</em>, <em>max_chunk_size=1048576</em>, <em>parallelism=10</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.messaging.Messaging.upload_file" title="Permalink to this definition">¶</a></dt>
-<dd><p>Upload file for sending.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>file</strong> – path to file</li>
-<li><strong>max_chunk_size</strong> – maximum size of one chunk</li>
-<li><strong>parallelism</strong> – number of uploading threads</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">FileLocation object if success or None otherwise</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="dialog_bot_sdk.messaging.Messaging.upload_file_chunk">
-<code class="descname">upload_file_chunk</code><span class="sig-paren">(</span><em>part_number</em>, <em>chunk</em>, <em>upload_key</em><span class="sig-paren">)</span><a class="headerlink" href="#dialog_bot_sdk.messaging.Messaging.upload_file_chunk" title="Permalink to this definition">¶</a></dt>
-<dd><p>Upload file chunk.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>part_number</strong> – number of chunk</li>
-<li><strong>chunk</strong> – chunk content</li>
-<li><strong>upload_key</strong> – upload key (need to be received from RequestGetFileUploadUrl request before uploading)</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Response of HTTP PUT request if success or None otherwise</p>
 </td>
 </tr>
 </tbody>

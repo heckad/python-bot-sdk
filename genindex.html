@@ -145,10 +145,10 @@
 </li>
       <li><a href="dialog_api.html#dialog_api.raw_api_pb2_grpc.add_RawAPIServicer_to_server">add_RawAPIServicer_to_server() (in module dialog_api.raw_api_pb2_grpc)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="dialog_api.html#dialog_api.registration_pb2_grpc.add_RegistrationServicer_to_server">add_RegistrationServicer_to_server() (in module dialog_api.registration_pb2_grpc)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="dialog_api.html#dialog_api.search_pb2_grpc.add_SearchServicer_to_server">add_SearchServicer_to_server() (in module dialog_api.search_pb2_grpc)</a>
 </li>
       <li><a href="dialog_api.html#dialog_api.sequence_and_updates_pb2_grpc.add_SequenceAndUpdatesServicer_to_server">add_SequenceAndUpdatesServicer_to_server() (in module dialog_api.sequence_and_updates_pb2_grpc)</a>
@@ -178,6 +178,8 @@
       <li><a href="dialog_api.html#dialog_api.authentication_pb2_grpc.AuthenticationStub">AuthenticationStub (class in dialog_api.authentication_pb2_grpc)</a>
 </li>
       <li><a href="dialog_bot_sdk.internal.html#dialog_bot_sdk.internal.bot.InternalBot.authorize">authorize() (dialog_bot_sdk.internal.bot.InternalBot method)</a>
+</li>
+      <li><a href="dialog_api.html#dialog_api.search_pb2_grpc.SearchServicer.AutocompleteSuggestions">AutocompleteSuggestions() (dialog_api.search_pb2_grpc.SearchServicer method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -515,10 +517,10 @@
 </li>
       <li><a href="dialog_api.html#dialog_api.messaging_pb2_grpc.MessagingServicer.LoadDialogs">LoadDialogs() (dialog_api.messaging_pb2_grpc.MessagingServicer method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="dialog_api.html#dialog_api.groups_pb2_grpc.GroupsServicer.LoadFullGroups">LoadFullGroups() (dialog_api.groups_pb2_grpc.GroupsServicer method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="dialog_api.html#dialog_api.users_pb2_grpc.UsersServicer.LoadFullUsers">LoadFullUsers() (dialog_api.users_pb2_grpc.UsersServicer method)</a>
 </li>
       <li><a href="dialog_api.html#dialog_api.messaging_pb2_grpc.MessagingServicer.LoadGroupedDialogs">LoadGroupedDialogs() (dialog_api.messaging_pb2_grpc.MessagingServicer method)</a>
@@ -530,6 +532,8 @@
       <li><a href="dialog_api.html#dialog_api.stickers_pb2_grpc.StickersServicer.LoadOwnStickers">LoadOwnStickers() (dialog_api.stickers_pb2_grpc.StickersServicer method)</a>
 </li>
       <li><a href="dialog_api.html#dialog_api.stickers_pb2_grpc.StickersServicer.LoadStickerCollection">LoadStickerCollection() (dialog_api.stickers_pb2_grpc.StickersServicer method)</a>
+</li>
+      <li><a href="dialog_api.html#dialog_api.search_pb2_grpc.SearchServicer.LoadUserSearchByPredicatesResults">LoadUserSearchByPredicatesResults() (dialog_api.search_pb2_grpc.SearchServicer method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -705,9 +709,9 @@
 </li>
       <li><a href="dialog_bot_sdk.html#dialog_bot_sdk.messaging.Messaging.send_file">send_file() (dialog_bot_sdk.messaging.Messaging method)</a>
 </li>
-      <li><a href="dialog_bot_sdk.html#dialog_bot_sdk.messaging.Messaging.send_message">send_message() (dialog_bot_sdk.messaging.Messaging method)</a>
+      <li><a href="dialog_bot_sdk.html#dialog_bot_sdk.messaging.Messaging.send_image">send_image() (dialog_bot_sdk.messaging.Messaging method)</a>
 </li>
-      <li><a href="dialog_bot_sdk.html#dialog_bot_sdk.messaging.Messaging.send_photo">send_photo() (dialog_bot_sdk.messaging.Messaging method)</a>
+      <li><a href="dialog_bot_sdk.html#dialog_bot_sdk.messaging.Messaging.send_message">send_message() (dialog_bot_sdk.messaging.Messaging method)</a>
 </li>
       <li><a href="dialog_api.html#dialog_api.authentication_pb2_grpc.AuthenticationServicer.SendAuthCallObsolete">SendAuthCallObsolete() (dialog_api.authentication_pb2_grpc.AuthenticationServicer method)</a>
 </li>
@@ -809,17 +813,13 @@
 </li>
       <li><a href="dialog_api.html#dialog_api.push_pb2_grpc.PushServicer.UnregisterApplePushKit">UnregisterApplePushKit() (dialog_api.push_pb2_grpc.PushServicer method)</a>
 </li>
-      <li><a href="dialog_api.html#dialog_api.push_pb2_grpc.PushServicer.UnregisterApplePushToken">UnregisterApplePushToken() (dialog_api.push_pb2_grpc.PushServicer method)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="dialog_api.html#dialog_api.push_pb2_grpc.PushServicer.UnregisterApplePushToken">UnregisterApplePushToken() (dialog_api.push_pb2_grpc.PushServicer method)</a>
+</li>
       <li><a href="dialog_api.html#dialog_api.push_pb2_grpc.PushServicer.UnregisterGooglePush">UnregisterGooglePush() (dialog_api.push_pb2_grpc.PushServicer method)</a>
 </li>
       <li><a href="dialog_api.html#dialog_api.messaging_pb2_grpc.MessagingServicer.UpdateMessage">UpdateMessage() (dialog_api.messaging_pb2_grpc.MessagingServicer method)</a>
-</li>
-      <li><a href="dialog_bot_sdk.html#dialog_bot_sdk.messaging.Messaging.upload_file">upload_file() (dialog_bot_sdk.messaging.Messaging method)</a>
-</li>
-      <li><a href="dialog_bot_sdk.html#dialog_bot_sdk.messaging.Messaging.upload_file_chunk">upload_file_chunk() (dialog_bot_sdk.messaging.Messaging method)</a>
 </li>
       <li><a href="dialog_api.html#dialog_api.users_pb2_grpc.UsersServicer">UsersServicer (class in dialog_api.users_pb2_grpc)</a>
 </li>
