@@ -26,7 +26,6 @@ setuptools.setup(
         'requests',
         'pyopenssl',
         'Pillow',
-        'opencv-python'
     ],
     python_requires='>=3',
     classifiers=[
